@@ -13,7 +13,9 @@
             "manual": "/api/v1/manual",
             "errorLogs": "/api/v1/errorLogs",
             "files": "/api/v1/files",
-            "samples": "/api/v1/samples"
+            "samples": "/api/v1/samples",
+            "cruds": "/api/v1/cruds",
+            "eventPages": "/api/v1/eventPages"
         };
 
         axboot.def["MODAL"] = {

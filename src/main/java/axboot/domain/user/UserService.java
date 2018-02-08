@@ -96,7 +96,11 @@ public class UserService extends BaseService<User, String> {
             builder.and(qUser.userCd.eq(userCd));
         }
 
-        List<User> list = select().from(qUser).where(builder).orderBy(qUser.userNm.asc()).fetch();
+        List<User> list = select()
+                .from(qUser)
+                .where(builder)
+                .orderBy(qUser.userNm.asc())
+                .fetch();
 
         if (isNotEmpty(filter)) {
             list = filter(list, filter);
